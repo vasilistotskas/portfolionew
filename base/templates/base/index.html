@@ -152,14 +152,16 @@
 			<div class="post-wrapper">
 				{% for post in posts %}
 				<div>
-					<div class="post">
-						<img class="thumbnail" src="{{post.thumbnail.url}}">
-						<div class="post-preview">
-							<h6 class="post-title">{{post.headline}}</h6>
-							<p class="post-intro">{{post.sub_headline}}</p>
-							<a href="{%  url 'post' post.slug %}">Read More</a>
+					<a href="{%  url 'post' post.slug %}">
+						<div class="post">
+							<img class="thumbnail" src="{{post.thumbnail.url}}">
+							<div class="post-preview">
+								<h6 class="post-title">{{post.headline}}</h6>
+								<p class="post-intro">{{post.sub_headline}}</p>
+								<a href="{%  url 'post' post.slug %}">Read More</a>
+							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				{% endfor %}
 			</div>
@@ -194,7 +196,7 @@
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
 		</div>
-	</section> 
+	</section>
 
 	<script type="text/javascript">
 		let static = "{% static 'css' %}"

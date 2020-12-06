@@ -1,8 +1,8 @@
 :root{
-	--mainColor:#15202B;
-	--secondaryColor:#192734;
+	--mainColor: #030405;
+	--secondaryColor: #08090a;
 
-	--borderColor:#164D56;
+	--borderColor: #122e37;
 
 	--mainText:#fff;
 	--secondaryText:#eeeeee;
@@ -13,7 +13,7 @@
 	--previewShadow:#111921;
 
 
-	--buttonColor:#17a2b8;
+	--buttonColor: #17859b;
 
 
 }

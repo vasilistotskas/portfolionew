@@ -99,7 +99,7 @@ h6 { font-size: 16px;}
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 
+	grid-template-areas:
 		'nav-wrapper nav-wrapper'
 		'left-column right-column'
 	;
@@ -212,7 +212,7 @@ h6 { font-size: 16px;}
 }
 
 #blue-mode{
-	background-color: #192734;
+	background-color: #18191a;
 }
 
 #green-mode{
@@ -307,8 +307,54 @@ h6 { font-size: 16px;}
 	text-align: center;
 }
 
-#social_img{
-	width: 100%;
+.social-links-slider{
+	display: grid;
+	align-content: center;
+	text-align: center;
+}
+
+.social-links-slider-image{
+	display: grid;
+	align-content: center;
+	text-align: center;
+	margin-left: 6%;
+
+}
+.social-links-slider-image img{
+	border: 5px groove #000000;
+    border-radius: 30px;
+}
+
+.logo-slider {
+	display: grid;
+	align-content: center;
+	text-align: center;
+	margin-left: 6%;
+    max-width:475px;
+	max-height:250px;
+}
+.logo-slider img{
+
+
+}
+.slick-dots li button{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#000;
+}
+.slick-dots li{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#000;
+}
+
+.slider-thumbnail{
+	display: block;
+	max-width: 475px;
+	max-height: 250px;
+	object-fit: cover;
 }
 
 
@@ -356,7 +402,7 @@ h6 { font-size: 16px;}
 	border-radius: 5px;
 	margin: 2px;
 	padding: 2px 5px;
-	font-size: 12px;	
+	font-size: 12px;
 }
 
 
@@ -385,7 +431,7 @@ h6 { font-size: 16px;}
 .input-field{
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom:10px; 
+	padding-bottom:10px;
 	background-color: var(--secondaryColor);
 	border-radius: 5px;
 	border:1px solid var(--borderColor);
@@ -397,7 +443,7 @@ h6 { font-size: 16px;}
 	margin-top: 10px;
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom:10px; 
+	padding-bottom:10px;
 	color: #fff;
 	background-color: var(--buttonColor);
 	border:none;
@@ -413,7 +459,7 @@ h6 { font-size: 16px;}
 @media screen and (max-width: 800px){
 	.intro-wrapper{
 		grid-template-columns: 1fr;
-		grid-template-areas: 
+		grid-template-areas:
 			'nav-wrapper'
 			'left-column'
 			'right-column'
@@ -440,6 +486,13 @@ h6 { font-size: 16px;}
 	}
 
 }
+.post{
 
-
-
+	transition-delay:0.2s;
+	-webkit-transition-delay:0.2s
+}
+.post:hover, .post:focus, .post:active {
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+	transition: 0s;
+	-webkit-transition:0s
+}

@@ -1,6 +1,6 @@
 console.log('Its working')
 
-let theme = localStorage.getItem('theme')
+var theme = localStorage.getItem('theme')
 
 if(theme == null){
 	setTheme('light')
@@ -8,12 +8,12 @@ if(theme == null){
 	setTheme(theme)
 }
 
-let themeDots = document.getElementsByClassName('theme-dot')
+var themeDots = document.getElementsByClassName('theme-dot')
 
 
 for (var i=0; themeDots.length > i; i++){
 	themeDots[i].addEventListener('click', function(){
-		let mode = this.dataset.mode
+		var mode = this.dataset.mode
 		console.log('Option clicked:', mode)
 		setTheme(mode)
 	})
@@ -41,27 +41,17 @@ function setTheme(mode){
 
 //slick slider
 
-$(document).ready(function(){
-  $('#slideshow .slick').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      autoplay: true,
-      speed: 1000,
-      autoplayspeed:2000,
-  });
-});
 
-
-$('.fade').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: true,
-  speed: 1000,
-  autoplayspeed:2000,
+$('.logo-slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    speed: 1000,
+    autoplayspeed:2000,
+    nextArrow: '<div class="right"><i class="fa fa-angle-right"></i></div>',
+    prevArrow: '<div class="left"><i class="fa fa-angle-left"></i></div>',
 });

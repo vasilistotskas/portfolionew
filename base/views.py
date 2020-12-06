@@ -9,9 +9,6 @@ from .filters import PostFilter
 from .models import Post, SocialImage
 
 
-# Create your views here.
-
-
 def home(request):
 	posts = Post.objects.filter(active=True, featured=True)[0:3]
 	socialimage = SocialImage.objects.all()
